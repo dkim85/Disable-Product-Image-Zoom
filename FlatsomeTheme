@@ -1,0 +1,6 @@
+//Disable Product Image Zoom Flatsome 
+
+function remove_image_zoom_support_webtalkhub() {
+    remove_theme_support( 'wc-product-gallery-zoom' );
+}
+add_action( 'wp', 'remove_image_zoom_support_webtalkhub', 100 );
